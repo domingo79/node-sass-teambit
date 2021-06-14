@@ -1,45 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import 'partials/common';
 @import 'partials/variables';
+@import 'partials/mixins';
 
 header{
     width: 85%;
     margin: 0 auto;
-
     nav{
         width: 100%;
         height: 60px;
         display: flex;
-        border-bottom: 1px solid $horizontal-rule;
         align-items: center;
+        border-bottom: 1px solid $horizontal-rule;
         .logo{
             width: 50%;
-            text-align: left;
+            justify-content: start;
+            & img{
+                width: 100px;
+                height: 30px;
+            }
         }
         .bottoni{
             width: 50%;
-            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             a{
                 text-decoration: none;
-                margin: 1rem;
+                padding: 1rem;
                 color: $text-color;
                 font-weight: 600;
-            }& i{
-                margin: 0.25rem;
+                & i{
+                padding: 0.25rem;
+                }
+                
             }
-            button{
+            .sing_up{
                 border: 2px solid $empty-color;
                 border-radius: 3px;
                 padding: 0.5rem 0.25rem;
                 background: none;
                 color: $empty-color;
                 font-weight: 600;
+                align-items: center;
                img{
-                    width: 15px;
-                    line-height: 33px;
+                    width: 16px;
+                    align-items: center;
                 }
             }
 
         }
+    }
+
+    .titolo{
+        width: calc(100% / 2);
+        float: left;
+        padding-top: 3rem;
+        color: $title-color;
+        h1{
+            font-size: 3rem;
+            padding: 1rem 0;
+            color: $text-color;
+        }
+        p{
+            font-size: 1.5rem;
+            padding: 1.5rem 0;
+            color: $text-color;
+        }
+        .sing_up_header{
+            padding: 1.5rem 0;
+            a{
+            @include btn_full;
+            margin: 0.25rem;
+            text-decoration: none;
+            & img{
+                width: 20px;
+                padding: 0 0.25rem;
+                }
+            }
+        }a{
+            color: $text-color;
+            text-decoration: none;
+            & i{
+                color: $text-color;
+                margin: 0.25rem;
+            }
+        }
+
+    }
+    .image_header{
+        width: calc(100% / 2);
+        float: left;
+        padding-top: 3rem;
+
+    }& img{
+        width: 100%;
     }
 }

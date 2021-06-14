@@ -17,35 +17,88 @@ header nav {
   width: 100%;
   height: 60px;
   display: flex;
-  border-bottom: 1px solid #7b6858;
   align-items: center;
+  border-bottom: 1px solid #7b6858;
 }
 header nav .logo {
   width: 50%;
-  text-align: left;
+  justify-content: start;
+}
+header nav .logo img {
+  width: 100px;
+  height: 30px;
 }
 header nav .bottoni {
   width: 50%;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 header nav .bottoni a {
   text-decoration: none;
-  margin: 1rem;
+  padding: 1rem;
   color: #644E3E;
   font-weight: 600;
 }
-header nav .bottoni i {
-  margin: 0.25rem;
+header nav .bottoni a i {
+  padding: 0.25rem;
 }
-header nav .bottoni button {
+header nav .bottoni .sing_up {
   border: 2px solid #7586B7;
   border-radius: 3px;
   padding: 0.5rem 0.25rem;
   background: none;
   color: #7586B7;
   font-weight: 600;
+  align-items: center;
 }
-header nav .bottoni button img {
-  width: 15px;
-  line-height: 33px;
+header nav .bottoni .sing_up img {
+  width: 16px;
+  align-items: center;
+}
+header .titolo {
+  width: calc(100% / 2);
+  float: left;
+  padding-top: 3rem;
+  color: #58402C;
+}
+header .titolo h1 {
+  font-size: 3rem;
+  padding: 1rem 0;
+  color: #644E3E;
+}
+header .titolo p {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  color: #644E3E;
+}
+header .titolo .sing_up_header {
+  padding: 1.5rem 0;
+}
+header .titolo .sing_up_header a {
+  background-color: #2C4792;
+  color: #fff;
+  border-radius: 5px;
+  margin: 0.25rem;
+  text-decoration: none;
+}
+header .titolo .sing_up_header a img {
+  width: 20px;
+  padding: 0 0.25rem;
+}
+header .titolo a {
+  color: #644E3E;
+  text-decoration: none;
+}
+header .titolo a i {
+  color: #644E3E;
+  margin: 0.25rem;
+}
+header .image_header {
+  width: calc(100% / 2);
+  float: left;
+  padding-top: 3rem;
+}
+header img {
+  width: 100%;
 }
